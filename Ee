@@ -1,0 +1,15 @@
+m Message Ok
+        uses: appleboy/telegram-action@master
+        env:
+          GITHUB_CONTEXT: ${{ toJSON(github) }}
+        with:
+          to: ${{ 718707339 }}
+          token: ${{ 5532010713:AAGhZ2rKjXzXzdjbiNmelzlUmzD28JwNlTY }}
+          format: markdown
+          message: |
+            *1st line of your message with bold*
+            *2nd line of your message with bold, too*
+            Application: *Write something to be put inside your message*. The below lines still are part of your message.          
+            Branch: *${{ github.ref }}*
+            Repository: *${{ https://github.com/skyline-emu/skyline }}*
+            Owner: *${{ https://github.com/skyline-emu }}*
